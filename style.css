@@ -8,9 +8,67 @@
 .container {
     position: relative;
     width: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 35px 0;
+    display: grid;
+    grid-template-columns: 465px 320px;
+    border: 2px solid red;
 }
 
 #title {
     text-align: center;
-    margin: 15px;
-}  
+    margin: 15px 0;
+} 
+
+.left {
+    margin-right: 150px;
+    position: relative;
+    width: 80%;
+    border: 2px solid green;
+}
+
+.contact {
+    position: relative;
+    display: block;
+}
+
+.contact h1 {
+    font-size: 18px;
+    color: #333;
+    margin: 15px 0;
+}
+
+.left .campo {
+    margin: 10px 0;
+}
+
+.left .campo .label {
+    font-size: 12px;
+    color: #4f4f4f;
+    margin: 10px 0;
+    position: relative;
+    display: block;
+}
+
+.left .campo .input-field {
+    position: relative;
+}
+
+.left .campo .input-field input{
+    border: 1px solid #828282;
+    padding: 8px 5px 8px 35px;
+    color: #828282;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.left .campo .input-field i {
+    position: absolute;
+    color: #828282;
+    font-size: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3%;
+}
