@@ -18,3 +18,10 @@ productsDiv.addEventListener("click", (event) => {
 });
 
 //* calculate cart and product totals 
+
+const calculateProductAndCartTotal = (productInfoDiv) => {
+    let price = productInfoDiv.querySelector("strong").innerText;
+    let quantity = productInfoDiv.querySelector("#product-quantity").innerText;
+    let productTotalDiv = productInfoDiv.querySelector(".product-line-price");
+    productTotalDiv.innerText = (price * quantity).toFixed(2);
+}
