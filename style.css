@@ -169,6 +169,10 @@
     font-weight: 600;
 }
 
+.product-info strong::before {
+    content: "$";
+}
+
 .quantity-controller {
     border-radius: 5px;
     border: 1px solid rgb(136, 136, 136);
@@ -202,6 +206,10 @@ p {
     font-size: 12px;
 }
 
+.product-line-price:before {
+    content: "Product Total: $";
+}
+
 .buy-detail {
     margin: 5px 0;
     border-top: 1px solid #BDBDBD;
@@ -220,7 +228,11 @@ p {
     text-align: right;
 }
 
-#shipping {
+.buy-detail p:nth-child(2):before {
+    content: "$";
+}
+
+#cart-subtotal {
     margin-top: 50px;
 }
 
